@@ -12,18 +12,25 @@
   <script src="js/csi.min.js"></script>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="/rup" class="brand-logo">RUP</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Modelado del negocio</a></li>
+        <li class="divider"></li>
+        <li><a href="/rup/ing_requisitos.html">Ingenieria de requisitos</a></li>
+        <li class="divider"></li>
+        <li><a href="/rup/diseno_de_sistemas.html">Diseño de sistemas</a></li>
+
+    </ul>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="/rup" class="brand-logo">RUP</a>
+            <ul class="right">
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Contenido<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <div class="preloader-wrapper big active">
@@ -37,7 +44,7 @@
         </div>
       </div>
      </div>
-     <div data-include="ingrequisitos.html"></div>
+     <div data-include="htmls/ingrequisitos.html"></div>
     </div>
   </div>
   <footer class="page-footer orange">
@@ -56,7 +63,7 @@
 	  </p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Fork: <a class="white-text" href="asd">github</a></h5>
+          <h5 class="white-text">Fork: <a class="white-text" href="https://github.com/urielaero/rup">github</a></h5>
         </div>
       </div>
     </div>
